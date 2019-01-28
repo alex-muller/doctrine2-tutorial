@@ -59,6 +59,22 @@ class Bug
         $this->reporter = $reporter;
     }
 
+    /**
+     * @return mixed
+     */
+    public function getEngineer()
+    {
+        return $this->engineer;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getReporter()
+    {
+        return $this->reporter;
+    }
+
     public function assignToProduct(Product $product)
     {
         $this->products[] = $product;
